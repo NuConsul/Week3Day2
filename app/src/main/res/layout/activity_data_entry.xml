@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DataEntryActivity">
+
+    <!--  Name, Major, Minor, ExpectedGradYear, StudentGPA, CompletedHours   -->
+
+    <!--
+    private String expectedGradYear ;
+    private String studentGPA ;
+    private String completedHours ; -->
+
+
+    <EditText
+        android:id="@+id/etStudentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/standard_font_size"
+        android:textColor="#36B2F4"
+        android:textStyle="italic"
+        android:hint="Student Name"/>
+
+    <EditText
+        android:id="@+id/etStudentMajor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/standard_font_size"
+        android:textColor="#36B2F8"
+        android:textStyle="italic"
+        android:hint="Student Major"/>
+
+    <EditText
+        android:id="@+id/etStudentMinor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/standard_font_size"
+        android:textColor="#36B2F8"
+        android:textStyle="italic"
+        android:hint="Student Minor"/>
+
+    <EditText
+        android:id="@+id/etExpectedGradYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/standard_font_size"
+        android:textColor="#36B"
+        android:textStyle="italic"
+        android:hint="Expected Grad Year"/>
+
+    <EditText
+        android:id="@+id/etStudentGPA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/standard_font_size"
+        android:textColor="#35E"
+        android:textStyle="italic"
+        android:hint="Student GPA"/>
+
+    <EditText
+        android:id="@+id/etCompletedHours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/standard_font_size"
+        android:textColor="#35E"
+        android:textStyle="italic"
+        android:hint="Completed Hours"/>
+
+
+    <Button
+        android:id="@+id/btnSendResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SEND RESULT"
+        android:onClick="onClick"/>
+
+</LinearLayout>
